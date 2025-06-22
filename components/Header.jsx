@@ -28,7 +28,7 @@ const links = [
 const Header = () => {
   return (
     <header className='bg-primary py-4 sticky top-0 p-[15px]'>
-        <div className="container mx-auto ">
+        <div className="container mx-auto  ">
 
         <ul className='flex gap-12 text-white '>
             {links.map((link,index) => {

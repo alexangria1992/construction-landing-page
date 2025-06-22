@@ -1,35 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
 
 /* body{
   @apply font-secondary text-secondary;
 } */
 :root {
-
-  --primary: #ff5733;
+  --primary: #121315;
   --secondary: #666666;
   --accent: #ffca3b;
   --border: #d7d7d7;
   --black: #000;
-
 }
-
-
 
 @theme {
   --font-primary: "DM Sans", "sans-serif";
   --font-secondary: "Barlow", "sans-serif";
   --breakpoint-sm: 640px;
- --breakpoint-md: 750px;
- --breakpoint-lg: 960px;
- --breakpoint-xl: 1200px;
- --container-padding: 15px;
+  --breakpoint-md: 750px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+  --container-padding: 15px;
   --shadow-custom: 0px 4px 54px 10px rgba(18, 19, 21, 0.06);
 
-  --bg-hero: url('/assets/img/hero/bg.jpg');
-
- 
-  
+  --bg-hero: url("/assets/img/hero/bg.jpg");
 }
 
 @layer utilities {
@@ -41,40 +34,44 @@
     color: var(--primary);
   }
 
-  .text-secondary{
+  .text-secondary {
     color: var(--secondary);
   }
 
-  .text-accent{
-    color: var(--accent)
+  .text-accent {
+    color: var(--accent);
   }
 
-  .text-border{
-    color: var(--border)
+  .text-border {
+    color: var(--border);
   }
 
-   .shadow-custom {
+  .shadow-custom {
     box-shadow: var(--shadow-custom);
   }
 
-   .bg-hero {
+  .bg-hero {
     background-image: var(--bg-hero);
   }
 
   .font-secondary {
     font-family: var(--font-secondary);
-    
   }
 
   .font-primary {
     font-family: var(--font-primary);
   }
 
-  .bg-primary{
+  .bg-primary {
     background-color: var(--color-black);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-primary);
     color: var(--primary);
   }
@@ -85,13 +82,13 @@
     text-transform: uppercase;
     line-height: 1.1;
   }
-   @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
     .h1 {
       font-size: 54px;
     }
   }
 
-   .h2 {
+  .h2 {
     font-size: 36px;
     line-height: 1.3;
     text-transform: capitalize;
@@ -111,13 +108,12 @@
   }
 
   .h4 {
-    font-size: 1.5rem;   /* text-2xl = 24px */
+    font-size: 1.5rem; /* text-2xl = 24px */
     line-height: 2rem;
-    font-weight: 600;    /* semibold */
+    font-weight: 600; /* semibold */
   }
 
-  .container-padding{
+  .container-padding {
     padding: var(--container-padding);
   }
 }
-
